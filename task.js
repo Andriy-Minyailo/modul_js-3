@@ -73,16 +73,25 @@
 // console.log(countProps({ name: "Mango", age: 2 })); //2
 
 // task_13
-const apartment = {
-  descr: "Spacious apartment in the city center",
-  rating: 4,
-  price: 2153,
-};
-const values = [];
-// Change code below this line
-const keys = Object.keys(apartment);
-for (const key of keys) {
-  values.push(apartment[key]);
-}
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// for (const key of keys) {
+//   values.push(apartment[key]);
+// }
 
-console.log(values);
+// console.log(values);
+
+// task_14
+function countProps(object) {
+  // Change code below this line
+  
+    return Object.keys(object).length;;
+  // Change code above this line
+}
+console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
