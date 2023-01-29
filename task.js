@@ -88,10 +88,21 @@
 // console.log(values);
 
 // task_14
-function countProps(object) {
-  // Change code below this line
+// function countProps(object) {
+//   // Change code below this line
   
-    return Object.keys(object).length;;
-  // Change code above this line
+//     return Object.keys(object).length;;
+//   // Change code above this line
+// }
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+
+// task_16
+function countTotalSalary(salaries) {
+  let totalSalary = 0;
+  // Change code below this line
+for (const value of Object.values(salaries)) {
+  totalSalary += value;
 }
-console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+  // Change code above this line
+  return totalSalary;
+}
