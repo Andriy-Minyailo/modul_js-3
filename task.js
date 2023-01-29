@@ -16,12 +16,12 @@
 // apartment.rooms = 3;
 // apartment.location = {
 //     country: 111,
-// city: "Kingston", 
+// city: "Kingston",
 // }
 
 // console.table(apartment);
 
-
+// task_10
 // const apartment = {
 //   descr: "Spacious apartment in the city center",
 //   rating: 4,
@@ -38,21 +38,51 @@
 // console.log(keys);
 // console.log(values);
 
-const keys = [];
-const values = [];
-const advert = {
-  service: "apt",
-};
-const apartment = Object.create(advert);
-apartment.descr = "Spacious apartment in the city center";
-apartment.rating = 4;
-apartment.price = 2153;
+// task_11
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: "apt",
+// };
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
 
-for (const key in apartment) {
-  // Change code below this line
-if (apartment.hasOwnProperty(key)) {
-  keys.push(key);
+// for (const key in apartment) {
+//   // Change code below this line
+// if (apartment.hasOwnProperty(key)) {
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
+//   // Change code above this line
+// }
+
+// task_12
+// function countProps(object) {
+//   let propCount = 0;
+//   // Change code below this line
+// for (const key in object) {
+//   if (object.hasOwnProperty(key)) {
+//     propCount += 1;
+//   }
+// }
+//   // Change code above this line
+//   return propCount;
+// }
+// console.log(countProps({ name: "Mango", age: 2 })); //2
+
+// task_13
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+const values = [];
+// Change code below this line
+const keys = Object.keys(apartment);
+for (const key of keys) {
   values.push(apartment[key]);
 }
-  // Change code above this line
-}
+
+console.log(values);
