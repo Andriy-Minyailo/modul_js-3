@@ -243,12 +243,25 @@
 
 // task_31
 // Change code below this line
-function add(...args) {
-  let result = 0;
-  for (const number of args) {
-    result += number;
+// function add(...args) {
+//   let result = 0;
+//   for (const number of args) {
+//     result += number;
+//   }
+//   return result;
+//   // Change code above this line
+// }
+
+task_32
+function addOverNum(firstNumber, ...args) {
+  let total = 0;
+
+  for (const arg of args) {
+    if (arg > firstNumber) {
+    total += arg;
+    }
   }
-  return result;
+
+  return total;
   // Change code above this line
 }
-
