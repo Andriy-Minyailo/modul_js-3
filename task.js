@@ -228,17 +228,27 @@
 
 // task_30
 
-function makeTask(data) {
-  const completed = false;
-  const category = "General";
-  const priority = "Normal";
-  // Change code below this line
-  const newObject = {category: "General", priority: "Normal", ...data, completed: false };
- return newObject;
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+//   const newObject = {category: "General", priority: "Normal", ...data, completed: false };
+//  return newObject;
  
+//   // Change code above this line
+// }
+// console.log(makeTask({}));
+// console.log(makeTask({category: "Homemade", priority: "Low", text: "Take out the trash"}));
+
+// task_31
+// Change code below this line
+function add(...args) {
+  let result = 0;
+  for (const number of args) {
+    result += number;
+  }
+  return result;
   // Change code above this line
 }
-console.log(makeTask({}));
-console.log(makeTask({category: "Homemade", priority: "Low", text: "Take out the trash"}));
-
 
