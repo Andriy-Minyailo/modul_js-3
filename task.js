@@ -252,16 +252,28 @@
 //   // Change code above this line
 // }
 
-task_32
-function addOverNum(firstNumber, ...args) {
-  let total = 0;
+// task_32
+// function addOverNum(firstNumber, ...args) {
+//   let total = 0;
 
-  for (const arg of args) {
-    if (arg > firstNumber) {
-    total += arg;
+//   for (const arg of args) {
+//     if (arg > firstNumber) {
+//     total += arg;
+//     }
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+
+// task_33
+function findMatches(array, ...args) {
+  const matches = []; // Don't change this line
+  for (const number of array) {
+    if (args.includes(number)) {
+      matches.push(number);
     }
   }
-
-  return total;
   // Change code above this line
+  return matches;
 }
