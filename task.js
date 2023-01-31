@@ -267,13 +267,27 @@
 // }
 
 // task_33
-function findMatches(array, ...args) {
-  const matches = []; // Don't change this line
-  for (const number of array) {
-    if (args.includes(number)) {
-      matches.push(number);
-    }
-  }
-  // Change code above this line
-  return matches;
-}
+// function findMatches(array, ...args) {
+//   const matches = []; // Don't change this line
+//   for (const number of array) {
+//     if (args.includes(number)) {
+//       matches.push(number);
+//     }
+//   }
+//   // Change code above this line
+//   return matches;
+// }
+
+// task_35
+const bookShelf = {
+  books: ["The last kingdom", "Haze", "The guardian of dreams"],
+  updateBook(oldName, newName) {
+    // Change code below this line
+  let index = this.books.indexOf(oldName);
+    this.books.splice(index, 1, newName);
+
+
+    // Change code above this line
+  },
+};
+
